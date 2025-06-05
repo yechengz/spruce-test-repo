@@ -9,11 +9,7 @@ buildConfiguration:
 livePreviewConfiguration:
   setupCommand: npm run dev -- --no-prod-url --local
 responseHeaders:
-  - pathPattern: .*en/location6.*
+  - pathPattern: .*en/location3.*
     headerKey: Content-Security-Policy
     headerValues:
-      - font-src https://fonts.gstatic.com/
-  - pathPattern: .*en/location4.*
-    headerKey: Content-Security-Policy
-    headerValues:
-      - style-src 'self'; font-src 'self' https://fonts.gstatic.com/
+      - font-src 'self'; font-src https://fonts.gstatic.com/
