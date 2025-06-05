@@ -8,3 +8,8 @@ buildConfiguration:
       - .npmrc
 livePreviewConfiguration:
   setupCommand: npm run dev -- --no-prod-url --local
+responseHeaders:
+  - pathPattern: .*
+    headerKey: Content-Security-Policy
+    headerValues:
+      - font-src https://fonts.gstatic.com/
