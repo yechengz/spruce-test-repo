@@ -146,9 +146,6 @@ export const transformProps: TransformProps<any> = async (data) => {
   };
 };
 
-// 5KB string
-  const longString = Array.from({ length: 5000 }, () => 'a').join('');
-
 /**
  * This is the main template. It can have any name as long as it's the default export.
  * The props passed in here are the direct stream document defined by `config`.
@@ -171,6 +168,8 @@ const Location: Template<TemplateRenderProps> = ({
     description,
     siteDomain,
   } = document;
+  // 5KB string
+  const longString = Array.from({ length: 5000 }, () => 'a').join('');
   return (
     <>
       <PageLayout>
