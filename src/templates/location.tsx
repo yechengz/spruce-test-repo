@@ -168,8 +168,6 @@ const Location: Template<TemplateRenderProps> = ({
     description,
     siteDomain,
   } = document;
-  // 5KB string
-  const longString = Array.from({ length: 5000 }, () => 'a').join('');
   return (
     <>
       <PageLayout>
@@ -183,7 +181,6 @@ const Location: Template<TemplateRenderProps> = ({
             {hours && <Hours title={"Restaurant Hours"} hours={hours} />}
             {description && <About name={name} description={description} />}
           </div>
-          <p>{longString}</p>
         </div>
       </PageLayout>
     </>
