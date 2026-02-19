@@ -169,7 +169,7 @@ const Location: Template<TemplateRenderProps> = ({
     siteDomain,
   } = document;
   // 5KB string
-  const longString = Array.from({ length: 5000 }, () => 'a').join('');
+  const longString = Array.from({ length: 50000 }, () => 'a').join('');
   return (
     <>
       <PageLayout>
